@@ -26,7 +26,6 @@ package com.cws.esolutions.core.main;
  * kmhuntly@gmail.com   11/23/2008 22:39:20             Created.
  */
 import org.slf4j.Logger;
-import javax.sql.DataSource;
 import org.slf4j.LoggerFactory;
 import org.apache.commons.cli.Options;
 import org.apache.commons.cli.CommandLine;
@@ -38,10 +37,8 @@ import org.apache.commons.cli.OptionBuilder;
 import org.apache.commons.cli.ParseException;
 import org.apache.commons.cli.CommandLineParser;
 
-import com.cws.esolutions.core.CoreServiceBean;
 import com.cws.esolutions.core.CoreServiceConstants;
 import com.cws.esolutions.core.exception.CoreServiceException;
-import com.cws.esolutions.core.utils.exception.UtilityException;
 import com.cws.esolutions.core.listeners.CoreServiceInitializer;
 /**
  * @author khuntly
@@ -54,12 +51,9 @@ public class SQLUtils
     private static OptionGroup sshOptions = null;
 
     private static final String CNAME = SQLUtils.class.getName();
-    private static final CoreServiceBean appBean = CoreServiceBean.getInstance();
-    private static final DataSource dataSource = appBean.getDataSources().get("ApplicationDataSource");
 
     private static final Logger DEBUGGER = LoggerFactory.getLogger(CoreServiceConstants.DEBUGGER);
     private static final boolean DEBUG = DEBUGGER.isDebugEnabled();
-    private static final Logger ERROR_RECORDER = LoggerFactory.getLogger(CoreServiceConstants.ERROR_LOGGER);
 
     public enum LoadType
     {

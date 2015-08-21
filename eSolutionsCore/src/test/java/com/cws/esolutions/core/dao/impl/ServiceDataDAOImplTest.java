@@ -42,7 +42,6 @@ import com.cws.esolutions.core.processors.enums.ServiceStatus;
 import com.cws.esolutions.core.dao.interfaces.IServiceDataDAO;
 import com.cws.esolutions.core.listeners.CoreServiceInitializer;
 import com.cws.esolutions.core.processors.enums.NetworkPartition;
-import com.cws.esolutions.security.listeners.SecurityServiceInitializer;
 
 public class ServiceDataDAOImplTest
 {

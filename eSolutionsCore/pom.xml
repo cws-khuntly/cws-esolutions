@@ -15,15 +15,13 @@
     <description>Core application software utilized by all applications in the eSolutions software suite</description>
 
     <scm>
-        <url>https://github.com/cwsus/cws-esolutions/tree/master/eSolutionsCore</url>
+        <url>https://github.com/cwsus/cws-esolutions/tree/emailops/eSolutionsCore</url>
     </scm>
 
     <properties>
         <activemq.version>5.8.0</activemq.version>
         <jms-api.version>1.1-rev-1</jms-api.version>
         <quartz.version>2.1.6</quartz.version>
-        <moxy.version>2.4.0</moxy.version>
-        <eclipselink.version>2.4.0</eclipselink.version>
         <j2ssh.version>0.2.9</j2ssh.version>
         <virtualbox.version>4.2.8</virtualbox.version>
         <jsch.version>0.1.50</jsch.version>
@@ -137,14 +135,6 @@
             <groupId>com.jcraft</groupId>
             <artifactId>jzlib</artifactId>
             <version>${jzlib.version}</version>
-            <type>jar</type>
-            <scope>compile</scope>
-        </dependency>
-        <!-- virtualbox -->
-        <dependency>
-            <groupId>org.virtualbox</groupId>
-            <artifactId>vboxjws</artifactId>
-            <version>${virtualbox.version}</version>
             <type>jar</type>
             <scope>compile</scope>
         </dependency>

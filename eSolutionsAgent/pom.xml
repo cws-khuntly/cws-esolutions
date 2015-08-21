@@ -15,17 +15,13 @@
     <description>eSolutions Agent software - listener on target nodes for action</description>
 
     <scm>
-        <url>https://github.com/cwsus/cws-esolutions/tree/master/eSolutionsAgent</url>
+        <url>https://github.com/cwsus/cws-esolutions/tree/emailops/eSolutionsAgent</url>
     </scm>
 
     <properties>
         <activemq.version>5.8.0</activemq.version>
         <jms-api.version>1.1-rev-1</jms-api.version>
-        <websphere.version>8.5.5.2</websphere.version>
-        <weblogic.version>12.1</weblogic.version>
         <quartz.version>2.1.6</quartz.version>
-        <moxy.version>2.6.0-M3</moxy.version>
-        <eclipselink.version>2.6.0-M3</eclipselink.version>
         <commons-daemon.version>1.0.10</commons-daemon.version>
         <commons-exec.version>1.1</commons-exec.version>
     </properties>
@@ -65,93 +61,6 @@
             <groupId>javax.jms</groupId>
             <artifactId>jms-api</artifactId>
             <version>${jms-api.version}</version>
-            <type>jar</type>
-            <scope>compile</scope>
-        </dependency>
-        <!-- weblogic jar -->
-        <!--
-        <dependency>
-            <groupId>oracle</groupId>
-            <artifactId>wlfullclient</artifactId>
-            <version>${weblogic.version}</version>
-            <type>jar</type>
-            <scope>compile</scope>
-        </dependency>
-        -->
-        <dependency>
-            <groupId>com.ibm</groupId>
-            <artifactId>com.ibm.ws.admin.core</artifactId>
-            <version>${websphere.version}</version>
-            <type>jar</type>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.ibm</groupId>
-            <artifactId>com.ibm.ws.admin.core</artifactId>
-            <version>${websphere.version}</version>
-            <type>jar</type>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.ibm</groupId>
-            <artifactId>wsexception</artifactId>
-            <version>${websphere.version}</version>
-            <type>jar</type>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.ibm</groupId>
-            <artifactId>runtime</artifactId>
-            <version>${websphere.version}</version>
-            <type>jar</type>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.ibm</groupId>
-            <artifactId>bootstrap</artifactId>
-            <version>${websphere.version}</version>
-            <type>jar</type>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.ibm</groupId>
-            <artifactId>com.ibm.ws.emf</artifactId>
-            <version>${websphere.version}</version>
-            <type>jar</type>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.ibm</groupId>
-            <artifactId>ecore</artifactId>
-            <version>${websphere.version}</version>
-            <type>jar</type>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.ibm</groupId>
-            <artifactId>org.eclipse.emf.common</artifactId>
-            <version>${websphere.version}</version>
-            <type>jar</type>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.ibm</groupId>
-            <artifactId>ffdc</artifactId>
-            <version>${websphere.version}</version>
-            <type>jar</type>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.eclipse.persistence</groupId>
-            <artifactId>org.eclipse.persistence.moxy</artifactId>
-            <version>${moxy.version}</version>
-            <type>jar</type>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.eclipse.persistence</groupId>
-            <artifactId>eclipselink</artifactId>
-            <version>${eclipselink.version}</version>
             <type>jar</type>
             <scope>compile</scope>
         </dependency>

@@ -36,7 +36,7 @@
         <module>../jars/eSolutions_java_source</module>
         <module>../jars/eSolutions_web_config</module>
         <module>../wars/eSolutions_web_source</module>
-        <module>../ears/eSolutions_web_sourceEAR</module>
+        <!-- <module>../ears/eSolutions_web_sourceEAR</module> -->
     </modules>
 
     <dependencyManagement>

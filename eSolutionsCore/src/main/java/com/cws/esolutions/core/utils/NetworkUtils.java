@@ -47,7 +47,6 @@ import java.io.ObjectOutputStream;
 import java.net.InetSocketAddress;
 import com.jcraft.jsch.ChannelSftp;
 import com.jcraft.jsch.ChannelExec;
-import java.io.BufferedInputStream;
 import java.util.concurrent.TimeUnit;
 import java.net.UnknownHostException;
 import com.jcraft.jsch.JSchException;
@@ -327,11 +326,9 @@ public final class NetworkUtils
             DEBUGGER.debug("Value: {}", isUpload);
         }
 
-        int readLines = 0;
         Session session = null;
         Channel channel = null;
 
-        final byte[] buffer = new byte[1024];
         final SSHConfig sshConfig = appBean.getConfigData().getSshConfig();
 
         if (DEBUG)
